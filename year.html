@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>your year — JADED</title>
+  <meta name="description" content="Type the year you were born: your Chinese zodiac animal, your jade, your lucky hour, who to text and who not to, your 2026 in the year of the fire horse, and your song." />
+  <meta name="theme-color" content="#ff2e93" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+          鼠 牛 虎 兔                              s i t e   b y
+        豬         龍         年 年 有 玉          g h o s t l y . g r l
+        狗         蛇         every year,        ─────────────────────────
+          雞 猴 羊 馬         a jade.             concept · design · code
+                                                       /\_/\
+         twelve animals. five jades.                  ( o.o )  <3
+         one of each of you.                           > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       JADED — year.html. the four sacred beasts merch board, screen
+       by screen: the poster (a zodiac wheel in ink), the totes and
+       the masks, the tickets and the cups, then four squares: the
+       twelve, the playlist, the cd (it plays) and the pink one.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Big+Shoulders+Display:wght@200..900&family=Figtree:wght@400..900&family=Martian+Mono:wght@300..500&family=Pixelify+Sans:wght@500..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/year.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: the tap test ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ripples"><i></i><i></i><i></i></div>
+    <div class="loader__bangle" data-bangle="imperial"></div>
+    <p class="loader__t mono"><span data-loader-t>is it real?</span></p>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label mono"></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <span class="seal seal--sm">玉</span><span class="nav__name">JADED</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="shop.html" data-cursor="shop"><i>01</i>the pieces</a>
+      <a href="colours.html" data-cursor="colours"><i>02</i>colours</a>
+      <a href="real.html" data-cursor="is it real?"><i>03</i>is it real?</a>
+      <a href="year.html" data-cursor="your year"><i>04</i>your year</a>
+      <a href="visit.html" data-cursor="come by"><i>05</i>visit</a>
+    </nav>
+    <button class="nav__sound mono" data-sound aria-pressed="true" data-cursor="sound"><span class="nav__eq"><i></i><i></i><i></i></span><b>sound on</b></button>
+    <button class="nav__burger" aria-label="menu" data-cursor="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="shop.html">the pieces<span>品</span></a>
+    <a href="colours.html">colours<span>色</span></a>
+    <a href="real.html">is it real?<span>真</span></a>
+    <a href="year.html">your year<span>年</span></a>
+    <a href="visit.html">visit<span>訪</span></a>
+  </div>
+
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="3" seed="7" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <main>
+
+    <!-- ═════════ 01 · the poster — four sacred beasts, top half ═════════ -->
+    <section class="po" data-screen="poster">
+      <div class="po__left">
+        <h1 class="po__title"><span class="po__oval" aria-hidden="true"></span><b>年</b><b>年</b><b>有</b><b>玉</b><span class="sr">your year, in jade</span></h1>
+        <p class="po__pix">NIANNIANYOUYU</p>
+        <p class="po__yr"><b>20</b><span>YOUR YEAR<br />IN JADE</span><b>26</b></p>
+
+        <div class="pick">
+          <p class="mono">the year you were born</p>
+          <div class="pick__row">
+            <button data-yr="-1" aria-label="earlier year" data-cursor="−">−</button>
+            <input type="number" min="1930" max="2026" value="2001" inputmode="numeric" data-yr-input aria-label="birth year" />
+            <button data-yr="1" aria-label="later year" data-cursor="+">+</button>
+          </div>
+          <p class="pick__note mono">born in january or early february? the lunar year starts later, so you might be the animal before. <button data-prev data-cursor="be the one before">be the one before →</button></p>
+        </div>
+
+        <ul class="po__orn" aria-hidden="true"><li>福</li><li>祿</li><li>壽</li><li>喜</li></ul>
+        <p class="po__big" aria-hidden="true">十二生肖 一生一玉</p>
+        <div class="po__foot">
+          <p class="mono">twelve animals, five jades,<br />and you somewhere in between.<br />a jaded horoscope, est. 2026.</p>
+          <b>2026</b>
+          <p class="mono">year of the<br />fire horse<br />milano, it</p>
+        </div>
+      </div>
+
+      <div class="po__right">
+        <svg class="po__orbit" viewBox="0 0 600 600" aria-hidden="true"><defs><path id="orb" d="M300 60 a240 240 0 1 1 -0.1 0" /></defs><text><textPath href="#orb">SHU · NIU · HU · TU · LONG · SHE · MA · YANG · HOU · JI · GOU · ZHU · SHU · NIU · HU · TU · LONG · SHE · MA · YANG · HOU · JI · GOU · ZHU ·</textPath></text></svg>
+        <div class="wheel" data-wheel></div>
+        <div class="po__me">
+          <div class="po__jade tap" data-tap="lavender" data-cursor="tap it" role="button" aria-label="tap your jade"><div class="tap__ripples"></div><div data-bangle="lavender" data-me-jade></div></div>
+          <p class="po__cn" data-me-cn>蛇</p>
+        </div>
+        <i class="spark" style="left:6%;top:74%"></i><i class="spark" style="left:88%;top:8%"></i><i class="spark spark--s" style="left:80%;top:90%"></i>
+      </div>
+    </section>
+
+    <!-- ═════════ 02 · totes + masks ═════════ -->
+    <section class="mr mr--a" data-screen="totes">
+      <article class="tote tote--cream">
+        <span class="tote__handle" aria-hidden="true"></span>
+        <div class="tote__body">
+          <p class="tote__pix" data-me-up>SNAKE</p>
+          <p class="tote__oval"><b data-me-cn>蛇</b><span data-me-pin>she</span></p>
+          <p class="tote__line" data-me-line>—</p>
+          <p class="tote__rule mono"><span>your animal</span></p>
+          <p class="barcode" aria-hidden="true"></p>
+        </div>
+      </article>
+
+      <article class="tote tote--pink">
+        <span class="tote__handle" aria-hidden="true"></span>
+        <div class="tote__body">
+          <i class="tote__c tl" data-me-cn>蛇</i><i class="tote__c tr" data-me-cn>蛇</i><i class="tote__c bl" data-me-cn>蛇</i><i class="tote__c br" data-me-cn>蛇</i>
+          <p class="tote__yr"><b>20</b><span>YOUR<br />JADE</span><b>26</b></p>
+          <div class="tote__jade" data-bangle="lavender" data-me-jade></div>
+          <p class="tote__name"><span data-me-jcn>紫羅蘭</span> · <b data-me-jname>lavender</b></p>
+          <a class="tote__go mono" href="shop.html" data-me-piece data-cursor="see it">see your piece →</a>
+        </div>
+      </article>
+
+      <div class="masks">
+        <article class="mask">
+          <p class="mask__h"><b data-me-cn>蛇</b> your hour</p>
+          <p class="mask__big" data-me-hour>09—11</p>
+          <p class="mask__s mono" data-me-hour-line>—</p>
+        </article>
+        <article class="mask mask--ink">
+          <p class="mask__h"><b data-me-clash-cn>豬</b> don’t text</p>
+          <p class="mask__big" data-me-clash>the pig</p>
+          <p class="mask__s mono">your opposite on the wheel. it’s not personal. it’s astronomy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═════════ 03 · tickets + cups ═════════ -->
+    <section class="mr mr--b" data-screen="tickets">
+      <article class="tk tk--pink">
+        <p class="tk__side mono" aria-hidden="true">your best matches · 三合</p>
+        <div class="tk__in">
+          <p class="mono">who to text back</p>
+          <p class="tk__oval" data-me-trine>雞 · 牛</p>
+          <p class="tk__names" data-me-trine-en>the rooster and the ox</p>
+          <p class="mono tk__small">three animals, one triangle on the wheel. they get you. text them back.</p>
+        </div>
+      </article>
+
+      <article class="tk tk--ink">
+        <div class="tk__in">
+          <p class="tk__when mono">2026 · 丙午 · year of the fire horse<br />17 feb 2026 → 5 feb 2027</p>
+          <p class="tk__2026" data-me-2026>—</p>
+          <p class="tk__big"><b data-me-cn>蛇</b><span>年年有玉</span></p>
+        </div>
+      </article>
+
+      <div class="cups">
+        <figure class="cup"><span class="cup__lid"></span><div class="cup__body"><b data-me-cn>蛇</b><span class="mono">lucky no.</span><em data-me-num>9</em></div></figure>
+        <figure class="cup cup--ink"><span class="cup__lid"></span><div class="cup__body"><b data-me-cn>蛇</b><span class="mono">lucky jade</span><em data-me-jname>lavender</em></div></figure>
+      </div>
+    </section>
+
+    <!-- ═════════ 04 · four squares ═════════ -->
+    <section class="sq" data-screen="squares">
+      <article class="sq__c sq--ink">
+        <p class="sq__pix">TWELVE</p>
+        <ul class="twelve" data-twelve></ul>
+        <p class="mono sq__foot">tap an animal to borrow it</p>
+      </article>
+
+      <article class="sq__c sq--list">
+        <h2>播放列表 · the playlist</h2>
+        <ol class="pl" data-playlist></ol>
+        <p class="mono sq__foot">one song per animal. yours is pink.</p>
+      </article>
+
+      <article class="sq__c sq--cd">
+        <button class="cd" data-cd data-cursor="play your year" aria-label="play your song">
+          <span class="cd__disc"><b data-me-cn>蛇</b><b data-me-cn>蛇</b><i></i></span>
+        </button>
+        <p class="mono sq__foot" data-cd-t>tap the cd. your animal, played on jade.</p>
+      </article>
+
+      <article class="sq__c sq--pink">
+        <p class="sq__pix">ONEJADE</p>
+        <p class="sq__cn">一生一玉<br />年年有你</p>
+        <p class="sq__s">one life, one jade. it’ll still be on your wrist in your next year of the <b data-me-en>snake</b>, in <b data-me-next>2037</b>. we can’t say that about anyone else.</p>
+        <a class="btn btn--ink magnetic" href="shop.html" data-me-piece data-cursor="see it"><span>your piece</span><span class="btn__seal">玉</span></a>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="ft__cols">
+      <div><b class="mono">the shop</b><a href="shop.html">the pieces</a><a href="colours.html">colours</a><a href="real.html">is it real?</a><a href="year.html">your year</a></div>
+      <div><b class="mono">come by</b><span>via paolo sarpi 9</span><span>20154 milano</span><a href="visit.html">tue—sat 12.00—20.00</a></div>
+      <div><b class="mono">say hi</b><span>hello@jaded.it</span><span>@jaded.milano</span><span>bangles tapped on this site: <b data-tinks-total>0</b></span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><span>翡翠</span><b>JADED</b></div>
+    <div class="ft__bottom">
+      <span>© JADED 2026 · a concept shop</span>
+      <span class="mono">no exes were contacted in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/year.js"></script>
+</body>
+</html>
+<!--
+          鼠 牛 虎 兔               /\_/\
+        豬         龍              ( o.o )   <3  ghostly.grl
+        狗         蛇               > ^ <
+          雞 猴 羊 馬     年年有玉. every year, a jade.
+-->

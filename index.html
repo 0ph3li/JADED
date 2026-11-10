@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>JADED — jade for the jaded</title>
+  <meta name="description" content="JADED is a jade jewellery shop in via Paolo Sarpi, Milano. Bangles, rings and charms in imperial green, lavender, icy, honey and black jade. Real jade rings when you tap it and stays cold in your hand. Unlike him." />
+  <meta name="theme-color" content="#ff2e93" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+                .-""""""-.                     s i t e   b y
+              .'  .----.  '.
+             /   /      \   \                  g h o s t l y . g r l
+            |   |   玉   |   |   ~ tink ~     ─────────────────────────
+             \   \      /   /                  concept · design · code
+              '.  '----'  .'
+                '-.____.-'                          /\_/\
+                                                   ( o.o )  <3
+           jade for the jaded.                      > ^ <
+           it rings when it's real. he didn't.
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       JADED — home. one world: the shocking-pink poster
+       (東方珍藏 / 肆象獻瑞 / lucky snake / misery is a butterfly),
+       with jade green as the only other colour, from the roof tiles
+       and leaves in the moodboard. the device: tap a bangle, it rings.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Big+Shoulders+Display:wght@200..900&family=Figtree:wght@400..700&family=Martian+Mono:wght@300..500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: the tap test ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ripples"><i></i><i></i><i></i></div>
+    <div class="loader__bangle" data-bangle="imperial"></div>
+    <p class="loader__t mono"><span data-loader-t>is it real?</span></p>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label mono"></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <span class="seal seal--sm">玉</span><span class="nav__name">JADED</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="shop.html" data-cursor="shop"><i>01</i>the pieces</a>
+      <a href="colours.html" data-cursor="colours"><i>02</i>colours</a>
+      <a href="real.html" data-cursor="is it real?"><i>03</i>is it real?</a>
+      <a href="year.html" data-cursor="your year"><i>04</i>your year</a>
+      <a href="visit.html" data-cursor="come by"><i>05</i>visit</a>
+    </nav>
+    <button class="nav__sound mono" data-sound aria-pressed="true" data-cursor="sound"><span class="nav__eq"><i></i><i></i><i></i></span><b>sound on</b></button>
+    <button class="nav__burger" aria-label="menu" data-cursor="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="shop.html">the pieces<span>品</span></a>
+    <a href="colours.html">colours<span>色</span></a>
+    <a href="real.html">is it real?<span>真</span></a>
+    <a href="year.html">your year<span>年</span></a>
+    <a href="visit.html">visit<span>訪</span></a>
+  </div>
+
+  <main>
+
+    <!-- ═════════ 01 · hero — the 東方珍藏 poster ═════════ -->
+    <section class="hero" data-screen="hero">
+      <div class="hero__paper" aria-hidden="true"></div>
+
+      <div class="hero__intro">
+        <p class="cn">翡翠 · 玉器 · 米蘭</p>
+        <p>jade for the jaded.<br />bangles, rings & charms<br />for girls who stopped waiting.</p>
+      </div>
+
+      <p class="hero__vert vert">@ via paolo sarpi 9 · milano</p>
+      <p class="hero__vert hero__vert--b vert">@ 翡翠 · fěi cuì · kingfisher green</p>
+
+      <div class="hero__year" aria-hidden="true">(2026)</div>
+
+      <h1 class="hero__title" aria-label="JADED">
+        <span class="blk blk--1"><span class="blk__cn">翡</span><em class="blk__lat">Fěi</em></span>
+        <span class="blk blk--2"><span class="blk__cn">翠</span><em class="blk__lat">cuì</em></span>
+        <span class="blk blk--3"><span class="blk__cn">玉</span><em class="blk__lat">Jade</em></span>
+      </h1>
+
+      <button class="hero__bangle tap" data-tap="imperial" data-cursor="tap it" aria-label="tap the bangle to hear it ring">
+        <span class="tap__fallback" data-bangle="imperial"></span>
+        <span class="tap__ripples" aria-hidden="true"></span>
+      </button>
+      <p class="hero__hint mono">tap the bangle · real jade rings. <b data-tinks>0</b> tinks</p>
+
+      <div class="hero__hours">
+        <span class="mono">open tue—sat</span>
+        <b>12.00</b>
+        <b>20.00</b>
+        <span class="mono">fridays till 23.00. we know.</span>
+      </div>
+
+      <div class="hero__word">
+        <b>JADED</b>
+        <p>it rings when it’s real.<br />he didn’t.</p>
+      </div>
+
+      <div class="hero__aside">
+        <p class="vert">cold in your hand. warm on you. slowly.</p>
+        <span class="seal seal--red">真</span>
+      </div>
+      <span class="seal seal--red hero__seal">翡翠</span>
+    </section>
+
+    <!-- ═════════ 02 · the test — misery booklet pink ═════════ -->
+    <section class="test" data-screen="test">
+      <header class="test__head">
+        <span class="seal seal--outline">驗</span>
+        <p class="kicker mono" data-scramble>three ways to know it’s real</p>
+        <h2>we test every piece.<br /><em>he never passed any.</em></h2>
+      </header>
+
+      <div class="test__grid">
+        <article class="tcard tcard--tap">
+          <p class="tcard__n">01</p>
+          <h3>it rings.</h3>
+          <button class="tcard__stage tap" data-tap="icy" data-cursor="tap" aria-label="tap to hear it ring">
+            <span class="tap__fallback" data-bangle="icy"></span>
+            <span class="tap__ripples" aria-hidden="true"></span>
+          </button>
+          <canvas class="wave" data-wave aria-hidden="true"></canvas>
+          <p class="tcard__p">tap it with a coin. real jade sings, clear and long. glass and resin go <i>tok.</i></p>
+        </article>
+
+        <article class="tcard tcard--cold">
+          <p class="tcard__n">02</p>
+          <h3>it stays cold.</h3>
+          <button class="tcard__stage hold" data-hold data-cursor="hold it" aria-label="press and hold to warm it">
+            <span class="tap__fallback" data-bangle="lavender"></span>
+            <span class="hold__glow" aria-hidden="true"></span>
+          </button>
+          <p class="therm"><b data-temp>18.0</b><span>°c</span><i class="therm__bar"><i data-temp-bar></i></i></p>
+          <p class="tcard__p" data-hold-line>press and hold. real jade takes ages to warm up. like you, eventually.</p>
+        </article>
+
+        <article class="tcard tcard--light">
+          <p class="tcard__n">03</p>
+          <h3>light goes through.</h3>
+          <div class="tcard__stage torch" data-torch data-cursor="torch">
+            <span class="tap__fallback" data-bangle="honey"></span>
+            <span class="torch__beam" aria-hidden="true"></span>
+          </div>
+          <p class="tcard__p">hold a torch behind it. you’ll see the fibres, like felt, like veins. plastic shows you nothing. neither did he.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═════════ 03 · the album — misery is a butterfly ═════════ -->
+    <section class="album" data-screen="album">
+      <div class="album__cover">
+        <div class="slot slot--tone album__photo" data-img="HOME/album-cover.jpg"><span>flash photo: a girl with two bangles, red fan behind</span></div>
+        <p class="album__title"><b>JADED</b><em>is a Bangle</em></p>
+        <p class="album__vol mono">vol. 01 · autumn / winter 2026</p>
+        <span class="album__sticker">9 pieces<br />9 tones</span>
+      </div>
+
+      <div class="album__side">
+        <header>
+          <p class="mono">side a · songs for being left on read</p>
+          <h2>the collection<br /><em>is a tracklist.</em></h2>
+          <p class="album__how">every piece has its own tone. press ▶ to hear it ring.</p>
+        </header>
+        <ol class="tracks" data-tracks></ol>
+        <a class="btn btn--ink magnetic" href="shop.html" data-cursor="shop"><span>see every piece</span><span class="btn__seal">品</span></a>
+      </div>
+      <div class="peek" aria-hidden="true"><div class="peek__in"></div></div>
+    </section>
+
+    <!-- ═════════ 04 · the colours — lucky snake window + swatches ═════════ -->
+    <section class="colours" data-screen="colours">
+      <div class="win" data-win>
+        <svg class="lattice" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+          <path class="lattice__frame" fill-rule="evenodd" d="M0 0H1200V600H0Z M80 60 H1120 V540 H80Z"/>
+          <g class="lattice__lines">
+            <path d="M80 60 H170 V110 H125 V170 H80"/><path d="M1120 60 H1030 V110 H1075 V170 H1120"/>
+            <path d="M80 540 H170 V490 H125 V430 H80"/><path d="M1120 540 H1030 V490 H1075 V430 H1120"/>
+            <path d="M170 85 H330 M1030 85 H870 M170 515 H330 M1030 515 H870"/>
+            <path d="M100 170 V430 M1100 170 V430"/>
+            <rect x="91" y="291" width="18" height="18" transform="rotate(45 100 300)"/>
+            <rect x="1091" y="291" width="18" height="18" transform="rotate(45 1100 300)"/>
+          </g>
+        </svg>
+        <div class="win__sky" aria-hidden="true"></div>
+        <div class="win__in">
+          <p class="win__lat">FEICUIYANSE · 翡翠顏色</p>
+          <div class="win__bangle tap" data-tap="imperial" data-win-bangle data-cursor="tap it"><span class="tap__fallback" data-bangle="imperial"></span><span class="tap__ripples"></span></div>
+          <div class="win__txt">
+            <p class="win__cn" data-col-cn>帝王綠</p>
+            <h3 data-col-name>imperial green</h3>
+            <p data-col-line>for the one who left. the rarest, the most expensive, the one you keep thinking about.</p>
+          </div>
+          <span class="win__year">2026</span>
+        </div>
+      </div>
+
+      <div class="chart">
+        <div class="chart__head">
+          <h2>JADE<br />COLOUR</h2>
+          <p class="cn">翡翠配色</p>
+          <p class="chart__note">five colours. five people you used to text.</p>
+        </div>
+        <div class="chips" role="radiogroup" aria-label="jade colours" data-chips></div>
+      </div>
+    </section>
+
+    <!-- ═════════ 05 · the call — girl on the bed with the phone ═════════ -->
+    <section class="call" data-screen="call">
+      <div class="call__photo slot slot--tone" data-img="HOME/bed.jpg"><span>a girl lying on a pink bed, lavender bangle on her wrist</span></div>
+      <div class="call__phone" aria-label="lock screen notifications">
+        <p class="call__time"><span data-clock>23:47</span><small>monday, missed calls: 1</small></p>
+        <ul class="notes" data-notes>
+          <li><b>him</b><span>hey</span><i>23:12</i></li>
+          <li><b>him</b><span>u up?</span><i>23:31</i></li>
+          <li><b>him</b><span>missed call</span><i>23:40</i></li>
+          <li class="notes--me"><b>you</b><span>no.</span><i>now</i></li>
+          <li class="notes--jd"><b><span class="seal seal--sm">玉</span> JADED</b><span>your lavender bangle is ready. it’s been waiting. it’s good at that.</span><i>now</i></li>
+        </ul>
+      </div>
+      <div class="call__copy">
+        <p class="kicker mono" data-scramble>the call</p>
+        <h2>it warms up to you<br /><em>slowly.</em></h2>
+        <p>and then it stays warm. jade is the only thing you’ll wear every day for thirty years and never get tired of. we checked with our mothers.</p>
+      </div>
+    </section>
+
+    <!-- ═════════ 06 · your year — the zodiac ═════════ -->
+    <section class="year" data-screen="year">
+      <div class="year__left">
+        <p class="kicker mono" data-scramble>your year</p>
+        <h2>what year were you<br /><em>born, babe?</em></h2>
+        <div class="year__pick">
+          <button data-yr="-1" aria-label="earlier year" data-cursor="−">−</button>
+          <input type="number" min="1940" max="2025" value="2001" data-yr-input aria-label="birth year" />
+          <button data-yr="1" aria-label="later year" data-cursor="+">+</button>
+        </div>
+        <p class="year__note mono">we don’t check id. we check your aura.</p>
+      </div>
+      <div class="year__res">
+        <span class="year__cn" data-z-cn>蛇</span>
+        <div>
+          <p class="mono">your animal</p>
+          <h3 data-z-name>snake</h3>
+          <p class="year__luck"><span class="mono">your jade</span><b data-z-col>lavender</b></p>
+          <p class="year__line" data-z-line>—</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ 07 · the box — 肆象獻瑞 merch board ═════════ -->
+    <section class="box" data-screen="box">
+      <div class="box__head">
+        <h2 class="box__cn">玉盒</h2>
+        <p class="box__lat">WHAT’S IN THE BOX</p>
+        <p class="box__sub">every piece leaves in a pouch, in a box, with a certificate. <em>we can’t certify him.</em></p>
+      </div>
+      <div class="box__grid">
+        <figure class="bx bx--ink"><div class="slot slot--cut" data-img="HOME/pouch.webp"><span>the pink silk pouch with the black 玉 seal</span></div><figcaption><b>the pouch</b><span class="mono">pink silk, black ribbon, 玉 on the front</span></figcaption></figure>
+        <figure class="bx"><div class="slot slot--cut" data-img="HOME/box.webp"><span>the black box, open, bangle inside</span></div><figcaption><b>the box</b><span class="mono">black, satin inside. keep it for the next one.</span></figcaption></figure>
+      </div>
+      <div class="cert" data-cursor="stamp it">
+        <p class="cert__t">CERTIFICATE · 證書</p>
+        <p class="cert__l">this is to certify that the piece is <b>natural type A jadeite</b>, untreated, undyed, and that it will still be here when they aren’t.</p>
+        <p class="cert__sig"><span>tested by</span> <b>JADED, milano</b></p>
+        <button class="cert__stamp" data-stamp aria-label="stamp the certificate"><span class="seal seal--red">真品</span></button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="ft__cols">
+      <div><b class="mono">the shop</b><a href="shop.html">the pieces</a><a href="colours.html">colours</a><a href="real.html">is it real?</a><a href="year.html">your year</a></div>
+      <div><b class="mono">come by</b><span>via paolo sarpi 9</span><span>20154 milano</span><a href="visit.html">tue—sat 12.00—20.00</a></div>
+      <div><b class="mono">say hi</b><span>hello@jaded.it</span><span>@jaded.milano</span><span>bangles tapped on this site: <b data-tinks-total>0</b></span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><span>翡翠</span><b>JADED</b></div>
+    <div class="ft__bottom">
+      <span>© JADED 2026 · a concept shop</span>
+      <span class="mono">no exes were contacted in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
+<!--
+            .-""-.           /\_/\
+           /  玉  \         ( o.o )   <3  ghostly.grl
+           \      /          > ^ <
+            '-..-'       jade for the jaded.
+           ~ tink ~      it rings when it's real.
+-->

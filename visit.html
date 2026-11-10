@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>visit — JADED</title>
+  <meta name="description" content="JADED, via Paolo Sarpi 9, Milano. Open Tuesday to Saturday, 12.00 to 20.00. Tea, the tap test, a fitting with soap and a plastic bag, and a pink pouch to take it home in." />
+  <meta name="theme-color" content="#ff2e93" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+         「 來 」                                  s i t e   b y
+         「 坐 」     come by ×                    g h o s t l y . g r l
+                      via paolo sarpi 9          ─────────────────────────
+          ___         tue—sat · 12—20             concept · design · code
+         (   )  .-""-.                                  /\_/\
+          \_/  (  玉  )   a cup of tea,                ( o.o )  <3
+          ~~~   '-..-'    a bangle, no rush.            > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       JADED — visit.html. the pastel tea banners, one per screen, on
+       black: come by (open right now?), the street (a walk from M2
+       moscova), the week, what happens when you come (the fitting:
+       hold to squeeze your hand, the bangle slides on), and a seat at
+       the counter.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;500;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Big+Shoulders+Display:wght@200..900&family=Figtree:wght@400..900&family=Martian+Mono:wght@300..500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/visit.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: the tap test ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ripples"><i></i><i></i><i></i></div>
+    <div class="loader__bangle" data-bangle="imperial"></div>
+    <p class="loader__t mono"><span data-loader-t>is it real?</span></p>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label mono"></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <span class="seal seal--sm">玉</span><span class="nav__name">JADED</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="shop.html" data-cursor="shop"><i>01</i>the pieces</a>
+      <a href="colours.html" data-cursor="colours"><i>02</i>colours</a>
+      <a href="real.html" data-cursor="is it real?"><i>03</i>is it real?</a>
+      <a href="year.html" data-cursor="your year"><i>04</i>your year</a>
+      <a href="visit.html" data-cursor="come by"><i>05</i>visit</a>
+    </nav>
+    <button class="nav__sound mono" data-sound aria-pressed="true" data-cursor="sound"><span class="nav__eq"><i></i><i></i><i></i></span><b>sound on</b></button>
+    <button class="nav__burger" aria-label="menu" data-cursor="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="shop.html">the pieces<span>品</span></a>
+    <a href="colours.html">colours<span>色</span></a>
+    <a href="real.html">is it real?<span>真</span></a>
+    <a href="year.html">your year<span>年</span></a>
+    <a href="visit.html">visit<span>訪</span></a>
+  </div>
+
+
+  <main>
+
+    <!-- ═════════ 01 · come by — the cold brew banner ═════════ -->
+    <section class="bn bn--mint vh" data-screen="come by">
+      <p class="bn__box vh__box">茶中有玉，玉中有你</p>
+      <div class="vh__still" aria-hidden="true">
+        <span class="vh__hill"></span><span class="vh__hill vh__hill--2"></span>
+        <div class="vh__cup"><i></i></div>
+        <div class="vh__jade tap" data-tap="icy" data-cursor="tap it" role="button" aria-label="tap the bangle"><div class="tap__ripples"></div><div data-bangle="icy"></div></div>
+      </div>
+      <div class="vh__mid">
+        <p class="vh__date"><b data-today>11/10</b><span class="vert mono">milano · today</span></p>
+        <p class="vh__x" aria-hidden="true">×</p>
+        <p class="vh__tea"><em>Come</em><br /><span class="vert mono">by appointment, or not</span><em>by</em></p>
+      </div>
+      <h1 class="vh__cn" aria-label="come and sit"><span class="br">「</span><b>來</b><b>坐</b><span class="br br--end">」</span></h1>
+      <div class="vh__now" data-now>
+        <i class="vh__dot"></i><span data-now-t>checking the door…</span>
+      </div>
+      <p class="vh__addr mono"><span>via paolo sarpi 9 · 20154 milano</span><span>tue—sat · 12.00—20.00</span></p>
+    </section>
+
+    <!-- ═════════ 02 · the street — the white peach banner ═════════ -->
+    <section class="bn bn--peach st" data-screen="street">
+      <div class="st__copy">
+        <ul class="st__cols" aria-hidden="true"><li>步行七分</li><li>地鐵二號線</li><li>電車十二</li></ul>
+        <h2 class="st__cn">保羅·薩爾皮<br />街九號</h2>
+        <p class="st__lat"><em>via Paolo</em><br /><em class="in">Sarpi, nine</em></p>
+        <p class="st__how">milano’s chinatown. the street is pedestrian, so walk it: dumplings to your left, bubble tea to your right, us in the middle, under the pink sign.</p>
+        <ul class="st__ways mono">
+          <li><b>M2</b> moscova · 7 min</li>
+          <li><b>M5</b> monumentale · 6 min</li>
+          <li><b>tram</b> 12 · 14 · stop sarpi</li>
+          <li><b>bike</b> racks outside the door</li>
+        </ul>
+        <button class="bn__tag" data-walk data-cursor="walk it">walk it with me ←</button>
+      </div>
+      <div class="map" data-map>
+        <svg viewBox="0 0 640 520" aria-label="map of via paolo sarpi">
+          <defs>
+            <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9f3ee" /><stop offset="1" stop-color="#fbe4ec" /></linearGradient>
+          </defs>
+          <rect width="640" height="520" rx="26" fill="url(#mg)" />
+          <g class="map__blocks">
+            <path d="M40 60 L250 30 L280 170 L70 210 Z" /><path d="M300 20 L600 -10 L620 120 L320 160 Z" />
+            <path d="M80 240 L290 200 L320 340 L110 380 Z" /><path d="M340 190 L630 150 L640 300 L360 330 Z" />
+            <path d="M120 410 L330 370 L350 520 L140 540 Z" /><path d="M370 360 L640 330 L640 520 L390 520 Z" />
+          </g>
+          <g class="map__roads">
+            <path d="M-20 225 L660 130" class="r r--main" />
+            <path d="M260 -10 L300 190 L340 360 L360 540" class="r" />
+            <path d="M40 -10 L60 160 L95 400 L110 540" class="r r--thin" />
+            <path d="M610 -10 L625 160 L640 330" class="r r--thin" />
+            <path d="M-20 400 L660 340" class="r" />
+          </g>
+          <g class="map__names">
+            <text x="120" y="197" transform="rotate(-8 120 197)">via paolo sarpi</text>
+            <text x="318" y="300" transform="rotate(77 318 300)">via bramante</text>
+            <text x="70" y="330" transform="rotate(82 70 330)">via canonica</text>
+            <text x="430" y="352" transform="rotate(-5 430 352)">via niccolini</text>
+          </g>
+          <path class="map__route" data-route d="M560 470 C 520 420, 470 360, 420 352 L 352 358 L 332 270 L 312 196" />
+          <g class="map__mm" transform="translate(560 470)"><rect x="-22" y="-14" width="44" height="28" rx="6" /><text y="5">M2</text></g>
+          <text class="map__mmname" x="560" y="502">moscova</text>
+          <g class="map__mm map__mm--5" transform="translate(70 40)"><rect x="-22" y="-14" width="44" height="28" rx="6" /><text y="5">M5</text></g>
+          <g transform="translate(312 196)"><g class="map__pin"><circle r="22" /><text y="7">玉</text></g></g>
+          <circle class="map__walker" data-walker r="7" cx="560" cy="470" />
+        </svg>
+        <p class="map__label mono" data-walk-t>you are at moscova. 7 minutes to go.</p>
+      </div>
+    </section>
+
+    <!-- ═════════ 03 · the week — the spring exhibition banner ═════════ -->
+    <section class="bn bn--sky wk" data-screen="the week">
+      <header class="wk__head">
+        <h2 class="wk__cn">茶顏<i>。</i>玉色</h2>
+        <p class="wk__brace"><span>{</span><em>open five days,<br />closed two,</em><b>2026</b><span>}</span></p>
+        <p class="wk__tea"><em>Hours</em><span class="mono vert">when to come</span></p>
+      </header>
+      <ol class="days" data-days></ol>
+      <p class="wk__note mono">holidays: closed 1 jan, the first three days of lunar new year (we’re at our mothers’), 15 aug, 25—26 dec. every other tuesday to saturday, we’re here.</p>
+    </section>
+
+    <!-- ═════════ 04 · what happens — the spring tea banner ═════════ -->
+    <section class="bn bn--rose hp" data-screen="what happens">
+      <header class="hp__head">
+        <p class="hp__lat"><em>When</em><br /><em class="in">you come</em></p>
+        <h2 class="hp__cn">來店<br />四步</h2>
+        <p class="hp__vert vert mono">what happens · 四步</p>
+      </header>
+      <ol class="steps">
+        <li><b>01</b><span class="steps__cn">茶</span><h3>a cup of tea.</h3><p>oolong, in a little cup, before anything else. nobody buys jade in a rush. nobody should date in one either.</p></li>
+        <li><b>02</b><span class="steps__cn">聽</span><h3>the tap test.</h3><p>we tap every piece for you with an old coin. bring yours too: we test anything, free.</p></li>
+        <li><b>03</b><span class="steps__cn">戴</span><h3>the fitting.</h3><p>a bangle is a closed circle, so it goes over your knuckles. a little soap, a plastic bag over your hand, fold it small. try it here →</p></li>
+        <li><b>04</b><span class="steps__cn">包</span><h3>the pouch.</h3><p>pink silk, black ribbon, the certificate, the box. and a card that says nothing about him.</p></li>
+      </ol>
+
+      <div class="fit" data-fit>
+        <div class="fit__stage" aria-hidden="true">
+          <img class="fit__hand" src="img/VISIT/arm.webp" alt="" draggable="false" data-hand />
+          <div class="fit__jade" data-fit-jade><div data-bangle="imperial"></div></div>
+          <p class="fit__bag mono" data-bag>plastic bag: on</p>
+        </div>
+        <div class="fit__ui">
+          <p class="kicker mono">the fitting · try it</p>
+          <p class="fit__line" data-fit-line>press and hold to fold your hand small. let go too soon and it gets stuck on the knuckles.</p>
+          <button class="btn btn--ink magnetic fit__btn" data-squeeze data-cursor="hold"><span>hold to squeeze</span><span class="btn__seal">握</span></button>
+          <div class="fit__bar"><i data-fit-bar></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ 05 · a seat at the counter ═════════ -->
+    <section class="bn bn--mint bk" data-screen="book">
+      <div class="bk__copy">
+        <p class="bn__box">新品上市 · 留座</p>
+        <h2 class="bk__h"><em>a seat at</em><br /><em class="in">the counter.</em></h2>
+        <p>walk-ins are always fine. but if you want the counter to yourself for half an hour, tea included, pick a day and a time. we’ll keep the kettle on. it’s free.</p>
+        <p class="bk__fine mono">this is a concept shop: your booking stays in this browser and goes nowhere.</p>
+      </div>
+      <form class="bk__form" data-book autocomplete="off">
+        <fieldset><legend class="mono">01 · the day</legend><div class="chips" data-book-days></div></fieldset>
+        <fieldset><legend class="mono">02 · the time</legend><div class="chips chips--t" data-book-times></div></fieldset>
+        <fieldset><legend class="mono">03 · for</legend>
+          <div class="chips" data-book-for>
+            <button type="button" class="chip is-on" data-v="a bangle for me">a bangle for me</button>
+            <button type="button" class="chip" data-v="a gift">a gift</button>
+            <button type="button" class="chip" data-v="the tap test">the tap test</button>
+            <button type="button" class="chip" data-v="just tea, honestly">just tea, honestly</button>
+          </div>
+        </fieldset>
+        <label class="bk__name"><span class="mono">04 · a first name, so we can say hi</span><input type="text" maxlength="24" placeholder="your name" data-book-name /></label>
+        <button type="submit" class="btn btn--ink magnetic" data-cursor="keep it"><span>keep my seat</span><span class="btn__seal">座</span></button>
+      </form>
+      <div class="ticket" data-ticket hidden>
+        <p class="ticket__h mono">JADED · 留座 · a seat at the counter</p>
+        <p class="ticket__name" data-t-name>—</p>
+        <p class="ticket__when" data-t-when>—</p>
+        <p class="ticket__for mono" data-t-for>—</p>
+        <p class="ticket__foot mono"><span>via paolo sarpi 9</span><button type="button" data-unbook>cancel</button></p>
+        <span class="ticket__seal">玉</span>
+      </div>
+    </section>
+
+    <!-- ═════════ 06 · good to know ═════════ -->
+    <section class="gk" data-screen="good to know">
+      <ul class="gk__list">
+        <li><b>付</b><span>cash, card, satispay. no klarna. pay for your jade like you mean it.</span></li>
+        <li><b>語</b><span>italiano, english, 中文, and very good pointing.</span></li>
+        <li><b>門</b><span>step-free entrance. the counter has a lower side.</span></li>
+        <li><b>狗</b><span>dogs welcome. the zodiac ones and the real ones.</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="ft__cols">
+      <div><b class="mono">the shop</b><a href="shop.html">the pieces</a><a href="colours.html">colours</a><a href="real.html">is it real?</a><a href="year.html">your year</a></div>
+      <div><b class="mono">come by</b><span>via paolo sarpi 9</span><span>20154 milano</span><a href="visit.html">tue—sat 12.00—20.00</a></div>
+      <div><b class="mono">say hi</b><span>hello@jaded.it</span><span>@jaded.milano</span><span>bangles tapped on this site: <b data-tinks-total>0</b></span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><span>翡翠</span><b>JADED</b></div>
+    <div class="ft__bottom">
+      <span>© JADED 2026 · a concept shop</span>
+      <span class="mono">no exes were contacted in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/visit.js"></script>
+</body>
+</html>
+<!--
+         「 來 」     ___                      /\_/\
+         「 坐 」    (   )   .-""-.           ( o.o )   <3  ghostly.grl
+                      \_/   (  玉  )           > ^ <
+          via paolo sarpi 9. the kettle is on.
+-->

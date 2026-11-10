@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>the pieces — JADED</title>
+  <meta name="description" content="Every piece at JADED: lavender, black, two-tone, imperial, icy and honey jade bangles, a jade phone charm, a bi disc pendant and the self-gift. One of each, like a record." />
+  <meta name="theme-color" content="#ff2e93" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+          |        |        |        |            s i t e   b y
+          |        |        |        |
+        .-"-.    .-"-.      o      .-"-.          g h o s t l y . g r l
+       (  玉  )  (     )    ( )    (     )        ─────────────────────────
+        '-.-'    '-.-'      '      '-.-'          concept · design · code
+                                                        /\_/\
+           the pieces · 品 · they hang like lanterns    ( o.o )  <3
+           tap one, it swings. it rings.                > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       JADED — shop.html. the oriental spring garden poster on top
+       (pieces hanging on silk cords like lanterns), a black velvet
+       tray to filter, the counter (detail), find your size, and
+       four ways to wear it (the four-season banners).
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Big+Shoulders+Display:wght@200..900&family=Figtree:wght@400..700&family=Martian+Mono:wght@300..500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: the tap test ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ripples"><i></i><i></i><i></i></div>
+    <div class="loader__bangle" data-bangle="imperial"></div>
+    <p class="loader__t mono"><span data-loader-t>is it real?</span></p>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label mono"></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <span class="seal seal--sm">玉</span><span class="nav__name">JADED</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="shop.html" data-cursor="shop"><i>01</i>the pieces</a>
+      <a href="colours.html" data-cursor="colours"><i>02</i>colours</a>
+      <a href="real.html" data-cursor="is it real?"><i>03</i>is it real?</a>
+      <a href="year.html" data-cursor="your year"><i>04</i>your year</a>
+      <a href="visit.html" data-cursor="come by"><i>05</i>visit</a>
+    </nav>
+    <button class="nav__sound mono" data-sound aria-pressed="true" data-cursor="sound"><span class="nav__eq"><i></i><i></i><i></i></span><b>sound on</b></button>
+    <button class="nav__burger" aria-label="menu" data-cursor="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="shop.html">the pieces<span>品</span></a>
+    <a href="colours.html">colours<span>色</span></a>
+    <a href="real.html">is it real?<span>真</span></a>
+    <a href="year.html">your year<span>年</span></a>
+    <a href="visit.html">visit<span>訪</span></a>
+  </div>
+
+
+  <main>
+
+    <!-- ═════════ 01 · the garden — pieces hang like lanterns ═════════ -->
+    <section class="gd" data-screen="garden">
+      <div class="gd__sky" aria-hidden="true"></div>
+      <svg class="gd__frame" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 0H1440V40H0Z"/>
+        <g fill="none" stroke="currentColor" stroke-width="6" vector-effect="non-scaling-stroke">
+          <path d="M40 40V420M40 120H150V40M40 230H110V300H40M150 120V230H110"/>
+          <path d="M1400 40V420M1400 120H1290V40M1400 230H1330V300H1400M1290 120V230H1330"/>
+        </g>
+      </svg>
+      <p class="gd__calli cn" aria-hidden="true">玉不琢不成器</p>
+
+      <div class="gd__strings" data-strings></div>
+
+      <div class="gd__title">
+        <h1><span class="gd__cn">九件</span><span class="gd__lat"><em>the</em> pieces</span></h1>
+        <p class="gd__sub">one of each, like a record. tap one: it swings, it rings.</p>
+      </div>
+      <p class="gd__note">JADE IS NOT CUT,<br />IT IS CARVED.<br />SO WERE YOU.</p>
+      <span class="gd__year">(vol. 01)</span>
+      <span class="seal seal--red gd__seal">品</span>
+    </section>
+
+    <!-- ═════════ 02 · the tray ═════════ -->
+    <section class="tray" data-screen="tray">
+      <div class="tray__bar" role="toolbar" aria-label="filter the pieces">
+        <div class="tray__g" data-f="kind">
+          <span class="mono">colour</span>
+          <button class="is-on" data-v="all">all</button>
+        </div>
+        <div class="tray__g" data-f="type">
+          <span class="mono">type</span>
+          <button class="is-on" data-v="all">all</button>
+          <button data-v="bangle">bangles</button>
+          <button data-v="pendant">pendant</button>
+          <button data-v="charm">charm</button>
+        </div>
+        <label class="tray__sort mono">sort
+          <select data-sort>
+            <option value="no">tracklist</option>
+            <option value="lo">price, low</option>
+            <option value="hi">price, high</option>
+          </select>
+        </label>
+        <p class="tray__n mono"><b data-shown>9</b> / 9 on the velvet</p>
+      </div>
+
+      <div class="velvet" data-velvet></div>
+      <p class="tray__empty" hidden>nothing in that colour. <em>yet. like him.</em></p>
+    </section>
+
+    <!-- ═════════ 03 · find your size ═════════ -->
+    <section class="size" data-screen="size">
+      <div class="size__copy">
+        <p class="kicker mono" data-scramble>find your size</p>
+        <h2>it should be hard<br />to put on. <em>like leaving.</em></h2>
+        <p>squeeze your hand like you’re putting on a bangle (thumb tucked into the palm). measure across the knuckles, the widest point. slide below.</p>
+        <label class="size__range">
+          <span class="mono">your hand, across the knuckles</span>
+          <input type="range" min="6.5" max="9.5" step="0.1" value="7.6" data-hand aria-label="hand width in centimetres" />
+          <b><i data-hand-v>7.6</i> cm</b>
+        </label>
+      </div>
+      <div class="size__stage">
+        <div class="size__ring" data-ring><span data-bangle="lavender"></span></div>
+        <div class="size__res">
+          <p class="mono">your bangle</p>
+          <b><i data-size>56</i> mm</b>
+          <p data-size-line>inner diameter. snug over the knuckles, loose on the wrist.</p>
+        </div>
+        <ul class="size__scale" data-scale aria-hidden="true"></ul>
+      </div>
+    </section>
+
+    <!-- ═════════ 04 · four ways to wear it — the season banners ═════════ -->
+    <section class="ways" data-screen="ways">
+      <header class="ways__head">
+        <p class="kicker mono" data-scramble>four ways to wear it</p>
+        <h2>wear it every day.<br /><em>it gets better.</em></h2>
+      </header>
+      <article class="way way--1">
+        <div class="way__img" data-bangle="icy"></div>
+        <p class="way__poem cn">戴久了 · 玉會養人</p>
+        <div class="way__cn"><span>春</span><span>日日</span></div>
+        <p class="way__tag">每天<br />戴著</p>
+        <h3 class="way__lat">EVERY DAY <small>jade gets shinier from your skin. the more you wear it, the better it looks.</small></h3>
+      </article>
+      <article class="way way--2">
+        <div class="way__img" data-bangle="imperial"></div>
+        <p class="way__poem cn">運動時 · 先摘下</p>
+        <div class="way__cn"><span>夏</span><span>摘下</span></div>
+        <p class="way__tag">健身<br />取下</p>
+        <h3 class="way__lat">NOT AT THE GYM <small>take it off for weights, tennis, and the boyfriend who grabs your wrist.</small></h3>
+      </article>
+      <article class="way way--3">
+        <div class="way__img" data-bangle="honey"></div>
+        <p class="way__poem cn">大理石 · 要小心</p>
+        <div class="way__cn"><span>秋</span><span>小心</span></div>
+        <p class="way__tag">輕放<br />慢行</p>
+        <h3 class="way__lat">MIND THE MARBLE <small>bathroom counters are jade’s only enemy. that, and slamming doors.</small></h3>
+      </article>
+      <article class="way way--4">
+        <div class="way__img" data-bangle="black"></div>
+        <p class="way__poem cn">碎了 · 是替你擋災</p>
+        <div class="way__cn"><span>冬</span><span>擋災</span></div>
+        <p class="way__tag">碎了<br />別哭</p>
+        <h3 class="way__lat">IF IT BREAKS <small>it took the bad luck for you. that’s what they say. bring the pieces, we’ll make a pendant.</small></h3>
+      </article>
+    </section>
+
+    <!-- ═════════ 05 · the counter strip ═════════ -->
+    <section class="held" data-screen="held">
+      <div class="held__in">
+        <p class="mono">on the counter, waiting for you</p>
+        <ul class="held__list" data-held></ul>
+        <p class="held__empty" data-held-empty>nothing yet. pick a piece, press “hold it at the counter”. we keep it for 48 hours. <em>more than he did.</em></p>
+      </div>
+      <a class="btn btn--ink magnetic" href="visit.html" data-cursor="come by"><span>come and try them on</span><span class="btn__seal">訪</span></a>
+    </section>
+
+  </main>
+
+  <!-- ============ the counter (detail) ============ -->
+  <div class="counter" aria-hidden="true">
+    <div class="counter__bg" data-close></div>
+    <article class="counter__card" role="dialog" aria-modal="true" aria-label="piece">
+      <button class="counter__x" data-close data-cursor="close" aria-label="close">✕</button>
+      <div class="counter__media">
+        <button class="counter__piece tap" data-tap="imperial" data-cursor="tap it" aria-label="tap to hear it ring"><span class="tap__fallback" data-c-img></span><span class="tap__ripples"></span></button>
+        <p class="counter__hint mono">tap it. listen.</p>
+        <span class="counter__no" data-c-no>01</span>
+      </div>
+      <div class="counter__body">
+        <p class="mono" data-c-kind>lavender · bangle</p>
+        <h2 data-c-track>left on read</h2>
+        <p class="counter__what" data-c-what>lavender jade bangle</p>
+        <p class="counter__line" data-c-line>—</p>
+        <div class="counter__sizes" data-c-sizes>
+          <span class="mono">inner diameter</span>
+          <div class="counter__sz" data-sz></div>
+          <a href="#size" class="counter__help mono" data-close-to-size>not sure? find your size ↓</a>
+        </div>
+        <dl class="counter__facts">
+          <div><dt class="mono">stone</dt><dd>type A jadeite</dd></div>
+          <div><dt class="mono">from</dt><dd>myanmar, carved in guangzhou</dd></div>
+          <div><dt class="mono">comes in</dt><dd>pouch · box · certificate</dd></div>
+        </dl>
+        <div class="counter__buy">
+          <b data-c-price>€ 280</b>
+          <button class="btn btn--ink magnetic" data-hold-it data-cursor="hold it"><span>hold it at the counter</span><span class="btn__seal">留</span></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="ft__cols">
+      <div><b class="mono">the shop</b><a href="shop.html">the pieces</a><a href="colours.html">colours</a><a href="real.html">is it real?</a><a href="year.html">your year</a></div>
+      <div><b class="mono">come by</b><span>via paolo sarpi 9</span><span>20154 milano</span><a href="visit.html">tue—sat 12.00—20.00</a></div>
+      <div><b class="mono">say hi</b><span>hello@jaded.it</span><span>@jaded.milano</span><span>bangles tapped on this site: <b data-tinks-total>0</b></span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><span>翡翠</span><b>JADED</b></div>
+    <div class="ft__bottom">
+      <span>© JADED 2026 · a concept shop</span>
+      <span class="mono">no exes were contacted in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
+<!--
+          |              /\_/\
+        .-"-.           ( o.o )   <3  ghostly.grl
+       (  玉  )          > ^ <
+        '-.-'       nine pieces. one of each.
+       ~ tink ~     tap one. it rings.
+-->

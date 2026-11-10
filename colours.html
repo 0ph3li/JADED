@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>the five jades — JADED</title>
+  <meta name="description" content="Imperial green, lavender, icy, honey and black jade: the five colours at JADED, who each one is for, how rare it is, and how it sounds. Stack your own on the stand." />
+  <meta name="theme-color" content="#ff2e93" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+         ███ ███ ███ ███ ███                  s i t e   b y
+         綠  紫  冰  黃  墨                    g h o s t l y . g r l
+                                              ─────────────────────────
+         five jades.                           concept · design · code
+         five people you used to text.
+                                                    /\_/\
+         .-""-.  .-""-.  .-""-.                    ( o.o )  <3
+        ( stack )( them )(  up  )                   > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       JADED — colours.html. a brand-board opening (the sprout society
+       board, in pink), five pinned colour chapters you scroll through
+       sideways, a bitmap rarity chart (the bitmap ref), and the stand:
+       stack three bangles, they ring as a chord.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Big+Shoulders+Display:wght@200..900&family=Figtree:wght@400..700&family=Martian+Mono:wght@300..500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/colours.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: the tap test ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ripples"><i></i><i></i><i></i></div>
+    <div class="loader__bangle" data-bangle="imperial"></div>
+    <p class="loader__t mono"><span data-loader-t>is it real?</span></p>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label mono"></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <span class="seal seal--sm">玉</span><span class="nav__name">JADED</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="shop.html" data-cursor="shop"><i>01</i>the pieces</a>
+      <a href="colours.html" data-cursor="colours"><i>02</i>colours</a>
+      <a href="real.html" data-cursor="is it real?"><i>03</i>is it real?</a>
+      <a href="year.html" data-cursor="your year"><i>04</i>your year</a>
+      <a href="visit.html" data-cursor="come by"><i>05</i>visit</a>
+    </nav>
+    <button class="nav__sound mono" data-sound aria-pressed="true" data-cursor="sound"><span class="nav__eq"><i></i><i></i><i></i></span><b>sound on</b></button>
+    <button class="nav__burger" aria-label="menu" data-cursor="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="shop.html">the pieces<span>品</span></a>
+    <a href="colours.html">colours<span>色</span></a>
+    <a href="real.html">is it real?<span>真</span></a>
+    <a href="year.html">your year<span>年</span></a>
+    <a href="visit.html">visit<span>訪</span></a>
+  </div>
+
+
+  <main>
+
+    <!-- ═════════ 01 · the board — sprout society brand board, in pink ═════════ -->
+    <section class="bd" data-screen="board">
+      <div class="bd__top">
+        <p class="bd__kick mono">JADED 2026 · 翡翠 · colour standards</p>
+        <h1 class="bd__title"><span class="bd__cn">五色</span><span class="bd__lat">FIVE JADES</span></h1>
+        <p class="bd__arc mono" aria-hidden="true">five colours · five people you used to text · five colours · five people you used to text ·</p>
+      </div>
+      <div class="bd__panel">
+        <div class="bd__col bd__intro">
+          <h2 class="bd__h"><i></i>品牌顏色 / <small>STANDARD COLOURS</small></h2>
+          <p>jade isn’t only green. it comes in five moods, and every one of them reminds us of someone. we sort the shop by colour, not by price. you’d be surprised how often people walk in and point at their ex.</p>
+        </div>
+        <div class="bd__col">
+          <h2 class="bd__h"><i></i>標準色 / <small>HEX</small></h2>
+          <ul class="bd__dots" data-dots></ul>
+        </div>
+        <div class="bd__col bd__three">
+          <h2 class="bd__h"><i></i>三視圖 / <small>THREE VIEWS</small></h2>
+          <div class="bd__views">
+            <figure><span data-bangle="imperial"></span><figcaption class="mono">front</figcaption></figure>
+            <figure class="v-side"><span data-bangle="imperial"></span><figcaption class="mono">side</figcaption></figure>
+            <figure class="v-top"><span data-bangle="imperial"></span><figcaption class="mono">top</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ 02 · five chapters, sideways ═════════ -->
+    <section class="ch" data-screen="chapters">
+      <div class="ch__pin">
+        <div class="ch__track" data-track></div>
+        <div class="ch__prog" aria-hidden="true"><i data-prog></i></div>
+      </div>
+    </section>
+
+    <!-- ═════════ 03 · rarity — the bitmap chart ═════════ -->
+    <section class="rar" data-screen="rarity">
+      <header class="rar__head">
+        <p class="kicker mono" data-scramble>how rare is it</p>
+        <h2>rarer than<br /><em>a decent apology.</em></h2>
+        <p class="rar__note">out of every thousand pieces of jadeite that come out of the mines, roughly how many are this colour, this clear.</p>
+      </header>
+      <div class="rar__chart" data-rarity></div>
+    </section>
+
+    <!-- ═════════ 04 · the stand — stack three ═════════ -->
+    <section class="stand" data-screen="stand">
+      <div class="stand__copy">
+        <p class="kicker mono" data-scramble>stack them</p>
+        <h2>three on one wrist.<br /><em>a chord.</em></h2>
+        <p>pick three colours. they slide down the stand and ring together. some stacks sound sweet, some sound like a group chat. we’ll keep your stack at the counter.</p>
+        <div class="picks" data-picks></div>
+        <div class="stand__btns">
+          <button class="btn btn--ink magnetic" data-play data-cursor="play it"><span>play the stack</span><span class="btn__seal">響</span></button>
+          <button class="stand__clear mono" data-clear>take them off</button>
+        </div>
+        <p class="stand__verdict" data-verdict>your stack: empty. honestly, relatable.</p>
+      </div>
+      <div class="stand__stage">
+        <div class="cone" aria-hidden="true"><i></i></div>
+        <div class="stack" data-stack></div>
+        <p class="stand__label mono">the stand · black velvet · 1:1</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="ft__cols">
+      <div><b class="mono">the shop</b><a href="shop.html">the pieces</a><a href="colours.html">colours</a><a href="real.html">is it real?</a><a href="year.html">your year</a></div>
+      <div><b class="mono">come by</b><span>via paolo sarpi 9</span><span>20154 milano</span><a href="visit.html">tue—sat 12.00—20.00</a></div>
+      <div><b class="mono">say hi</b><span>hello@jaded.it</span><span>@jaded.milano</span><span>bangles tapped on this site: <b data-tinks-total>0</b></span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><span>翡翠</span><b>JADED</b></div>
+    <div class="ft__bottom">
+      <span>© JADED 2026 · a concept shop</span>
+      <span class="mono">no exes were contacted in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/colours.js"></script>
+</body>
+</html>
+<!--
+         ███ ███ ███ ███ ███        /\_/\
+         綠  紫  冰  黃  墨         ( o.o )   <3  ghostly.grl
+                                    > ^ <
+         five jades. five people you used to text.
+-->
